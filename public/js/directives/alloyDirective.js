@@ -8,7 +8,7 @@ angular.module("main")
         console.log("INSIDE: alloy Directive");
 
         return {
-            templateUrl: '../templates/inject.html',
+            templateUrl: '../templates/footer.html',
             controller: 'alloyController',
             replace: false
         }
