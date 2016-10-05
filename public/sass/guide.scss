@@ -1,0 +1,33 @@
+@import "colors";
+
+.font_color_white {
+  color: #fff;
+}
+.styleHeader{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.thisWillBeHuge{
+  color: $HUGE_color;
+  font-size: 100px;
+}
+.styleContainer {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.widthAdjusment {
+  width: 50%;
+}
+.styleContentBlock {
+  margin-bottom: 50px;
+}
+
+.dark_brown {
+  @extend .font_color_white;
+  background-color: $brown_dk;
+}
+
+.dark_brown {
+  @extend .font_color_white;
+  background-color: $brown_dk;
+}

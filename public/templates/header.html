@@ -1,0 +1,1185 @@
+
+<div id="ups-pageWrap">
+
+<!-- M01 Main Nav -->
+<!-- For full documentation app/source/partials/modules/M01_main_nav.hbs -->
+<div id="ups-navContainer">
+
+
+    <a id="ups-skipNav" href="#ups-main" tabindex="0">Skip to Content</a>
+    <header id="ups-headerWrap" class="ups-wrap">
+        <div id="ups-header" class="ups-wrap_inner">
+            <a id="ups-header_logo" href="/">UPS</a>
+
+
+
+
+                <div id="ups-headerTools" role="tablist">
+                    <a href="#" class="ups-toolsToggle" role="tab" aria-controls="ups-quickStartPanel" aria-selected="false" aria-expanded="false" id="ups-quickStartMenu">Quick Start
+                        <span class="ups-readerTxt" data-lang-show="Expand Quick Start" data-lang-hide="Collapse Quick Start">Collapse Quick Start</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </a>
+                    <div class="ups-headerTools_list" id="ups-quickStartPanel" role="tabpanel" aria-hidden="true" aria-labelledby="ups-quickStartMenu">
+                        <div class="ups-headerTools_msg">
+                            <h3>Hello, let us help you <a href="#tools_cta">get started</a>.</h3>
+                        </div>
+                        <ul class="ups-headerTools_widgets" role="tablist">
+                            <li class="ups-headerTools_track">
+
+<!-- W16 Simple Track -->
+<!-- For full documentation app/source/partials/widgets/W16_simple_track.hbs -->
+<div class="ups-wrap ups-simpleTrack_wrap ">
+    <div class="ups-wrap_inner">
+
+        <div class="ups-simpleTrack ups-widget ">
+            <div class="ups-widget_header">
+                <h2><span class="icon" aria-hidden="true"></span>Track</h2>
+
+            </div>
+            <div class="ups-widget_panel">
+
+                <form method="post" action="https://wwwapps.ups.com/WebTracking/track" name="trackMod">
+                    <input type="hidden" name="HTMLVersion" value="5.0">
+                    <input type="hidden" name="loc" value="en_US">
+                    <label for="ups-track--qs" class="ups-readerTxt">Tracking Numbers</label>
+                    <div class="ups-simpleTrack_input_wrap">
+                        <textarea rows="1" name="trackNums" id="ups-track--qs" class="ups-simpleTrack_input ups-form_input" placeholder="Tracking Numbers"></textarea>
+                    </div>
+                    <button class="ups-simpleTrack_btn ups-cta" value="track" name="track.x" type="submit" id="ups-tracking-submit">
+                        <i aria-hidden="true"></i>
+                        <span class="ups-readerTxt">Go</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </div> <!-- @end .ups-wrap_inner -->
+</div> <!-- @end .ups-wrap.ups-simpleTrack_wrap -->
+
+                            </li>
+
+
+                                <li class="ups-ship ups-toolCont" id="Shipping" data-widget-source="ship"  data-ajax-source="AddressBook">
+                                    <a href="/shipping.html" id="ups-quickStartShip" class="ups-headerTools_widgetToggle" role="tab" aria-controls="ups-quickStartShipPanel" aria-selected="false" aria-expanded="false"><span class="icon" aria-hidden="true"></span>Ship
+                                        <span class="ups-readerTxt" data-lang-show="Expand Ship" data-lang-hide="Collapse Ship">Collapse Ship</span>
+                                    </a>
+
+                                        <div class="ups-toolWrap" role="tabpanel" aria-hidden="true" id="ups-quickStartShipPanel" aria-labelledby="ups-quickStartShip">
+                                            <div class="ups-tool">
+                                                <button class="ups-headerTools_widgetClose"><span class="icon" aria-hidden="true"></span><span class="ups-readerTxt">Close</span></button>
+
+
+<div class="ups-shipping ups-form_wrap ups-widget ups-wrap  ">
+   <div class="ups-wrap_inner">
+        <div class="ups-widget_header">
+            <h2>Ship</h2>
+
+               <button class="ups-help_button"><span class="icon ups-icon-questioncircle" aria-hidden="true"></span>Help</button>
+
+        </div>
+        <div class="ups-widget_panel ups-shipping_panel">
+
+                <div class="ups-help_panel"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati maiores doloremque ab quibusdam adipisci corporis commodi ad rerum ipsum minima aliquam a natus cumque architecto tenetur consequatur quisquam, quidem atque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta accusantium deleniti quia esse vitae itaque corporis repellat sequi veniam, molestias hic nisi animi nobis minima, quaerat quam expedita quod ex! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut placeat consequuntur magni, voluptatibus magnam, debitis suscipit error accusantium blanditiis maiores laborum quae, repellat perspiciatis omnis corporis, quasi iste voluptatem a.</p></div>
+
+
+            <form>
+
+
+                        <p class="ups-shipping_message">Please <a href="#login" class="ups-link">log in</a> to ship using your UPS profile.</p>
+
+
+
+                <div class="ups-shipping_type ups-shipping_package ups-shipping_returns ups-shipping_freight ups-form_group ups-form_requiredNoAlert">
+
+                    <label
+                            for="shipping_type_select"
+
+                            class="ups-form_label">
+                        What type of shipment do you have?
+                    </label>
+
+                    <div class="ups-dropdown_wrapper ups-input_wrapper">
+
+                        <select
+
+                            id ="shipping_type_select"
+                            name="shipping_type_select"
+
+                            class="ups-dropdown" aria-required="true" required=""
+                        >
+                            <option value="package_letter">Package/Letter</option>
+                            <option value="returns">Returns</option>
+                            <option value="freight">Freight</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="ups-shipping_package ups-shipping_returns ups-shipping_freight ups-form_group ups-form_requiredNoAlert">
+
+                    <label
+
+                            for="ups-shipping_weight"
+                            class="ups-form_label"
+
+                    >
+                        Weight
+                    </label>
+
+                    <div class="ups-text_wrapper ups-input_wrapper weight_input" >
+
+                        <input
+
+                                name="ups-shipping_weight" id="ups-shipping_weight"
+
+                            class="ups-form_input ups-numberOnly" type="text" aria-required="true" required=""
+                        />
+
+
+                            <span class="ups-input_unit">lbs</span>
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="ups-shipping_package ups-shipping_returns ups-shipping_freight ups-form_group ups-form_requiredNoAlert">
+                    <label
+
+                            for="ups-shipping_from_select"
+
+                        class="ups-form_label"
+                    >
+                        Ship From
+                    </label>
+                    <div class="ups-dropdown_wrapper ups-input_wrapper">
+                        <select
+
+                                name="ups-shipping_from_select"
+                                id="ups-shipping_from_select"
+
+                            class="ups-dropdown" aria-required="true" required=""
+                        >
+                            <option value="">United States</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+               <div class="ups-shipping_package ups-shipping_returns ups-shipping_freight ups-form_group ups-form_requiredNoAlert ups-form_shortInput">
+                    <label
+
+                            for="ups-shipping_from"
+
+                        class="ups-form_label"
+                    >
+                        Ship From Zip Code
+                    </label>
+                    <div class="ups-text_wrapper ups-input_wrapper">
+                        <input
+
+                                name="ups-shipping_from"
+                                id="ups-shipping_from"
+
+                            class="ups-form_input"
+                            type="text" aria-required="true" required="">
+                    </div>
+                </div>
+
+                <div class="ups-shipping_package ups-shipping_returns ups-shipping_freight ups-form_group ups-form_requiredNoAlert">
+                    <label
+
+                            for="ups-shipping_to_select"
+
+                        class="ups-form_label"
+                    >
+                        Ship To
+                    </label>
+                    <div class="ups-dropdown_wrapper ups-input_wrapper">
+                        <select
+
+                                name="ups-shipping_to_select"
+                                id="ups-shipping_to_select"
+
+                            class="ups-dropdown" aria-required="true" required=""
+                        >
+                            <option value="">United States</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="ups-shipping_package ups-shipping_returns ups-shipping_freight ups-form_group ups-form_requiredNoAlert ups-form_shortInput">
+                    <label
+
+                        for="ups-shipping_to"
+
+                        class="ups-form_label"
+                    >
+                        Ship To Zip Code
+                    </label>
+                    <div class="ups-text_wrapper ups-input_wrapper">
+                        <input
+
+                                name="ups-shipping_to"
+                                id="ups-shipping_to"
+
+                            type="text"
+                            class="ups-form_input" aria-required="true" required="">
+                    </div>
+                </div>
+
+
+
+
+                <div class="ups-shipping_package ups-shipping_returns ups-shipping_freight ups-form_group ups-form_requiredNoAlert">
+                    <label
+
+                            for="ups-shipping_type"
+
+                        class="ups-form_label"
+                    >
+                        Service Speed
+                    </label>
+                    <div class="ups-dropdown_wrapper ups-input_wrapper">
+                        <select
+
+                                name="ups-shipping_type"
+                                id="ups-shipping_type"
+
+                            class="ups-dropdown" aria-required="true" required=""
+                        >
+                            <option value="">Select a service type</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="ups-shipping_package ups-shipping_returns ups-shipping_freight ups-form_ctaGroup">
+
+
+                    <button class="ups-cta ups-form_button ups-form_doubleButton ups-cta_primary ups-shipping_package" type="button">Ship as a Guest</button>
+
+
+
+                </div>
+
+
+                <div class="ups-shipping_freightNA ups-form_group ups-form_requiredNoAlert">
+                    <p>Please <a href="">Log in</a> to start a freight shipment.</p>
+                </div>
+
+
+
+                <div class="ups-shipping_returnsNA ups-form_group ups-form_requiredNoAlert">
+                    <p>Please <a href="">Log in</a> to create a return.</p>
+                </div>
+
+            </form>
+
+
+        </div>
+        <!-- @end .ups-news_panel -->
+   </div>
+</div>
+<!-- @end .ups-news -->
+
+                                            </div>
+                                        </div>
+
+                                </li>
+
+
+
+
+
+
+
+                                <li class="ups-quote ups-toolCont" id="CTC" data-ajax-source="AddressBook" data-widget-source="quote">
+                                    <a href="#quickStart_quote" id="ups-quickStartQuote" role="tab" aria-controls="ups-quickStartQuotePanel" aria-selected="false" aria-expanded="false" class="ups-headerTools_widgetToggle"><span class="icon" aria-hidden="true"></span>Quote
+                                        <span class="ups-readerTxt" data-lang-show="Expand Quote" data-lang-hide="Collapse Quote">Collapse Quote</span>
+                                    </a>
+                                    <div class="ups-toolWrap" role="tabpanel" aria-hidden="true" id="ups-quickStartQuotePanel" aria-labelledby="ups-quickStartQuote">
+                                        <div class="ups-tool">
+                                            <button class="ups-headerTools_widgetClose"><span class="icon" aria-hidden="true"></span><span class="ups-readerTxt">Close</span></button>
+
+
+<div class="ups-widget ups-wrap ups-quote ups-form_wrap ">
+   <div class="ups-wrap_inner">
+
+
+
+        <div class="ups-widget_panel ups-quote_panel">
+
+
+            <form class="ups-form">
+
+
+                <div class="ups-form_note ups-quote_package ups-quote_letter ups-form_group">
+                    <p>For more accurate estimates or to receive negotiated rates, please <a href="#login">log in</a>.</p>
+                </div>
+
+                <div class="ups-form_note ups-quote_freight ups-form_group">
+                    <p>For more accurate estimates please <a href="#login">log in</a>.</p>
+                </div>
+
+
+
+
+                <div class="ups-quote_type ups-quote_package ups-quote_letter ups-quote_freight ups-form_group ups-form_requiredNoAlert">
+                    <label for="quote_type_select" class="ups-form_label">What type of shipment do you have? </label>
+                    <div class="ups-dropdown_wrapper ups-input_wrapper">
+                        <select id ="quote_type_select" name="quote_type_select" class="ups-dropdown" aria-label="What type of shipment do you have?" aria-required="true" required="">
+                            <option value="letter">Letter</option>
+                            <option value="package">Package</option>
+                            <option value="freight">Freight</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="ups-quote_package ups-form_group ups-form_requiredNoAlert">
+                    <label for="ups-quote_package-weight" class="ups-form_label">Weight </label>
+                    <div class="ups-text_wrapper weight_input ups-input_wrapper">
+                        <input type="text" aria-label="Weight" aria-required="true" required="" name="ups-quote_package-weight" id="ups-quote_package-weight" class="ups-form_input ups-numberOnly">
+
+                            <span class="ups-input_unit">lbs</span>
+
+
+                    </div>
+                </div>
+
+
+
+               <div class="ups-quote_package ups-quote_letter ups-form_group ups-form_requiredNoAlert">
+                    <label for="quote_fromCountry--unauthenticated" class="ups-form_label">Ship From </label>
+                    <div class="ups-dropdown_wrapper ups-input_wrapper">
+                        <select name="quote_fromCountry--unauthenticated" id="quote_fromCountry--unauthenticated" class="ups-dropdown" aria-label="Ship From" aria-required="true" required="">
+                            <option value="">United States</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+
+               <div class="ups-quote_package ups-quote_letter ups-form_group ups-form_requiredNoAlert ups-form_shortInput">
+                    <label for="ups-quote_from-zip" class="ups-form_label">Ship From Zip Code </label>
+                    <div class="ups-text_wrapper ups-input_wrapper">
+                        <input type="text" name="ups-quote_from-zip" id="ups-quote_from-zip" class="ups-form_input"  aria-label="Ship From Zip Code" aria-required="true" required="">
+                    </div>
+                </div>
+
+                <div class="ups-quote_package ups-quote_letter ups-form_group ups-form_requiredNoAlert">
+                    <label for="quote_toCountry--unauthenticated" class="ups-form_label">Ship To </label>
+                    <div class="ups-dropdown_wrapper ups-input_wrapper">
+                        <select name="quote_toCountry--unauthenticated" id="quote_toCountry--unauthenticated" class="ups-dropdown" aria-label="Ship From" aria-required="true" required="">
+                            <option value="">United States</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+
+               <div class="ups-quote_package ups-quote_letter ups-form_group ups-form_requiredNoAlert ups-form_shortInput">
+                    <label for="quote_to--unauthenticated" class="ups-form_label">Ship To Zip Code </label>
+                    <div class="ups-text_wrapper ups-input_wrapper">
+                        <input type="text" name="quote_to--unauthenticated" id="quote_to--unauthenticated" class="ups-form_input" aria-label="Ship to Zip Code" aria-required="true" required="">
+                    </div>
+                </div>
+
+
+
+
+                <div class="ups-quote_freight ups-form_group ups-form_requiredNoAlert">
+                    <label for="quote_freight-offereings" class="ups-form_label">Freight Offerings </label>
+                    <div class="ups-dropdown_wrapper ups-input_wrapper">
+                        <select name="quote_freight-offereings" id="quote_freight-offereings" class="ups-dropdown" aria-label="Freight Offerings" aria-required="true" required="">
+                            <option value="">Select One</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="ups-form_group ups-quote_package ups-quote_letter ups-quote_residential">
+                    <div class = "ups-checkbox ups-input_wrapper">
+                        <input id="ups-residential_check_" class="ups-checkbox-custom" name="ups-residential" type="checkbox" value="residential">
+                        <label for="ups-residential_check_" class="ups-checkbox-custom-label">Residential Address</label>
+                    </div>
+                </div>
+
+                <div class="ups-form_ctaGroup ups-quote_package ups-quote_letter ups-quote_freight">
+                    <button class="ups-cta ups-form_button ups-cta_primary" type="submit">Get Quote</button>
+                </div>
+            </form>
+        </div>
+        <!-- @end .ups-news_panel -->
+   </div>
+</div>
+<!-- @end .ups-news -->
+
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
+                                <li class="ups-locations ups-locations-quickstart ups-toolCont">
+                                    <a href="#quickStart_loc" id="ups-quickStartLocation" class="ups-headerTools_widgetToggle" role="tab" aria-controls="ups-quickStartLocationPanel" aria-selected="false" aria-expanded="false"><span class="icon" aria-hidden="true"></span>Locations
+                                        <span class="ups-readerTxt" data-lang-show="Expand Locations" data-lang-hide="Collapse Locations">Collapse Locations</span>
+                                    </a>
+                                    <div class="ups-toolWrap" role="tabpanel" id="ups-quickStartLocationPanel" aria-hidden="true" aria-labelledby="ups-quickStartLocation">
+                                        <div class="ups-tool">
+                                            <button class="ups-headerTools_widgetClose"><span class="icon" aria-hidden="true"></span><span class="ups-readerTxt">Close</span></button>
+
+<!-- W01 Location Finder -->
+<!-- For full documentation app/source/partials/widgets/W01_location_finder.hbs -->
+<div class="ups-wrap ups-locFinder_wrap ">
+    <div class="ups-wrap_inner">
+        <div class="ups-locFinder ups-form_wrap ups-widget" data-map="true" data-closest="/assets/resources/ajax/location.json" data-hasloc="true" data-locmsg="Location Services Not Available">
+            <div class="ups-widget_header">
+                <h2>Location Nearest You</h2>
+
+            </div>
+            <div class="ups-widget_panel">
+
+
+
+
+                <div class="ups-locFinder_mapWrap">
+                    <a class="ups-locFinder_map" href="#mapLink"></a>
+                </div>
+
+                <div class="ups-locFinder_info ups-locFinder_infoMap"></div>
+                <div class="ups-form_ctaGroup ups-form_ctaGroup_map">
+                    <a href="#all_loc" class="ups-locFinder_cta ups-cta ups-ctaFullWidth ups-ctaLocFloat">View More Locations</a>
+                    <a href="#new_loc" class="ups-locFinder_link ups-locFinder_search">Search New Address</a>
+                </div>
+
+            </div>
+        </div>
+    </div> <!-- @end .ups-wrap_inner -->
+</div> <!-- @end .ups-wrap.ups-locFinder_wrap -->
+
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
+
+
+                                <li class="ups-deliveries ups-toolCont" >
+                                    <a href="#quickStart_manageHomeDeliveries" id="ups-quickStartDeliveryShow" class="ups-headerTools_widgetToggle ups-quickstart-iconLink" role="tab" aria-controls="ups-quickStartDeliveryShowPanel" aria-selected="false" aria-expanded="false"><span class="icon" aria-hidden="true"></span>Manage Home Deliveries
+
+                                        <span class="ups-readerTxt" data-lang-show="Expand Manage Home Deliveries" data-lang-hide="Collapse Manage Home Deliveries">Collapse Manage Home Deliveries</span>
+                                    </a>
+                                    <div class="ups-toolWrap" id="ups-quickStartDeliveryShowPanel" role="tabpanel" aria-hidden="true" aria-labelledby="ups-quickStartDeliveryShow">
+                                        <div class="ups-tool">
+                                            <button class="ups-headerTools_widgetClose"><span class="icon" aria-hidden="true"></span><span class="ups-readerTxt">Close</span></button>
+                                            <!-- ************************************************************************************ -->
+<!-- W5 Manage Home Delivieres, Quickstart                                                -->
+<!-- ************************************************************************************ -->
+
+<div class="ups-widget ups-manage-deliveries ups-wrap">
+   <div class="ups-wrap_inner">
+        <div class="ups-widget_header">
+            <h2>Manage Home Deliveries</h2>
+
+        </div>
+        <div class="ups-widget_panel">
+
+            <div class="manage-deliveries_header clearfix ups-sm_hide">
+                <div class="manage-deliveries_header_qs single_account">
+
+                    <div class="header-qs-container clearfix">
+
+
+                        <div class="package-total" data-account="account 1" data-active="true">
+                            <div class="total-text">Your Packages</div>
+                            <div class="package-notification">
+                                <div>0</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="manage-deliveries_quickstart" data-account="account 1" data-active="true">
+
+                <div class="no-deliveries-container">
+                    There are no deliveries scheduled for the upcoming week.
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+        <!-- @end .ups-widget_panel -->
+   </div>
+</div>
+<!-- @end .ups-widget -->
+
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
+                                <li class="ups-billing ups-toolCont ups-hasAlerts">
+                                    <a href="#quickStart_billing" id='ups-quickStartBilling' class="ups-headerTools_widgetToggle" aria-controls="ups-quickStartBillingPanel" role="tab" aria-selected="false" aria-expanded="false"><span class="icon" aria-hidden="true"></span>Billing
+
+                                            <span class="ups-headerTool_widgetAlert ups-icon-exclamation" aria-hidden="true"></span>
+
+                                        <span class="ups-readerTxt" data-lang-show="Expand Billing" data-lang-hide="Collapse Billing">Collapse Billing</span>
+                                    </a>
+                                    <div class="ups-toolWrap" id="ups-quickStartBillingPanel" role="tab" aria-selected="false" aria-expanded="false" aria-labelledby="ups-quickStartBilling">
+                                        <div class="ups-tool">
+                                            <button class="ups-headerTools_widgetClose"><span class="icon" aria-hidden="true"></span><span class="ups-readerTxt">Close</span></button>
+
+<div class="ups-wrap ups-billing_wrap ">
+    <div class="ups-wrap_inner">
+
+        <div class="ups-billing ups-widget">
+
+
+
+            <div class="ups-widget_panel">
+
+                <div class="ups-billing_body">
+
+
+
+                        <p><a href='#billing'>Visit the UPS Billing Center</a> to see all of your accounts.</p>
+
+                </div>
+
+
+                    <div class="ups-billing_tableWrap">
+                        <div class="ups-billing_table">
+                            <div class="ups-billing_tableHead">
+                                <div class="ups_billing-accountNum">Account V92W37</div>
+                                <div class="ups_billing-paymentDue">Payment due in 26 days</div>
+                            </div>
+
+                            <div class="ups_billing-tableColumn">
+                                <div class="ups_billing-tableRow">
+                                    <div class="ups_tableRow_label">Amount Due: </div>
+                                    <div class="ups_tableRow_value ups_billing-num">$124.95</div>
+                                </div>
+                                <div class="ups_billing-tableRow">
+                                    <div class="ups_tableRow_label">Payment Due Date: </div>
+                                    <div class="ups_tableRow_value ">July 28, 2015</div>
+                                </div>
+                                <div class="ups_billing-tableRow">
+                                   <div class="ups_tableRow-invoice">
+                                        <div class="ups_tableRow_label">Invoice Date: </div>
+                                        <div class="ups_tableRow_value">07/14/15</div>
+                                   </div>
+                                    <div class="ups_tableRow-total">
+                                        <div class="ups_tableRow_label">Total Outstanding: </div>
+                                        <div class="ups_tableRow_value ups_billing-num">$23,450.00</div>
+                                   </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                <div class="ups-form_ctaGroup ups-billing_billDue">
+
+
+                    <button class="ups-cta ups-cta_primary ups-cta_payAccount">Pay Now</button>
+                    <button class="ups-cta ups-cta_changeAccount"><span class="ups-icon-arrowbackforward" aria-hidden="true"></span><span>Remove Account</span></button>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- @end .ups-wrap_inner -->
+</div> <!-- @end .ups-wrap.ups-billing_wrap -->
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                        </ul>
+
+
+                            <ul class="ups-headerTools_links">
+
+                                    <li>
+                                        <a href="#tools_link1">Link to Page 1</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#tools_link2">Link to Page 2</a>
+                                    </li>
+
+                            </ul>
+
+                    </div>
+                </div>
+
+
+            <div id="ups-touchNav" class=" ups-med_show">
+                <button class="ups-menuToggle">
+                    <span class="ups-iconAlone ups-icon-menu" aria-hidden="true"></span>
+                    <span class="ups-readerTxt">Menu</span>
+                </button>
+
+                    <a href="#searchLanding" id="ups-mobSearch_btn" class="ups-searchBtn">
+                        <span class="ups-iconAlone ups-icon-search" aria-hidden="true"></span>
+                        <span class="ups-readerTxt">Search</span>
+                    </a>
+
+            </div>
+
+            <nav id="ups-navItems" class="ups-container">
+
+                <button class="ups-menuClose ups-med_show">
+                    <span class="ups-iconAlone ups-icon-x" aria-hidden="true"></span>
+                    <span class="ups-readerTxt">Close</span>
+                </button>
+                <button class="ups-menuBack ups-med_show"><span class="ups-icon-chevronleft" aria-hidden="true"></span>Back</button>
+
+                <div class="ups-navItems_primary" role="tablist">
+
+                        <div class="ups-navMenu ups-menu">
+                            <a href="#" class="ups-menu_toggle" role="tab" aria-controls="ups-menuPanel0" aria-selected="false" aria-expanded="false" id="ups-menuLinks0">Tracking
+                                <span class="ups-readerTxt" data-lang-show="Expand Tracking" data-lang-hide="Collapse Tracking">Collapse Tracking</span>
+                            </a>
+                            <div class="ups-menu_list ups-cols-2" id="ups-menuPanel0" role="tabpanel" aria-hidden="true" aria-labelledby="ups-menuLinks0">
+                                <h2 class="ups-med_show">Tracking</h2>
+                                <div class="ups-menu_listCols">
+
+                                        <div class="ups-menu_column">
+                                            <h3>Track Shipments</h3>
+                                            <ul class="ups-menu_links">
+
+                                                    <li>
+                                                        <a href="#track_track">
+                                                            Track & Tracking History
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#track_home_del">
+                                                            Manage Home Deliveries: <em>UPS My Choice<sup>&reg;</sup></em>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#track_change">
+                                                            Change Delivery
+                                                        </a>
+                                                    </li>
+
+
+
+                                            </ul>
+                                        </div> <!-- @end .ups-menu_column -->
+
+                                        <div class="ups-menu_column">
+                                            <h3>More Tracking Options</h3>
+                                            <ul class="ups-menu_links">
+
+                                                    <li>
+                                                        <a href="#track_business">
+                                                            Manage Inbound/Outbound Shipments: <em>Quantum View<sup>&#8480;</sup></em>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#track_brokerage">
+                                                            Brokerage & Compliance
+                                                        </a>
+                                                    </li>
+
+
+
+                                            </ul>
+                                        </div> <!-- @end .ups-menu_column -->
+
+
+
+                                        <a class="ups-menu_cta" href="#track_explore">Explore All Tracking<span class="icon" aria-hidden="true"></span></a>
+
+                                </div> <!-- @end .ups-menu_listCols -->
+
+                                <!-- <a class="ups-menu_marketing-message" href="" tabindex="0"></a> -->
+                                <div class="ups-menu_mktg ups-med_hide">
+
+
+                                    <div class="ups-menu_mktgCallout">
+                                        <a href="#track_callout">
+                                            <img src="/assets/resources/images/navigation/MS06_200x100.jpg" tabindex="0" alt="">
+                                        </a>
+                                        <h3>Couch. Car. Wherever you are.</h3>
+                                        <p>Ship, track, and find locations right from your mobile device with the UPS Mobile™ app.</p>
+                                        <a class="ups-cta_link" href="#track_callout">Download the UPS Mobile™ app</a>
+                                    </div>  <!-- @end .ups-menu_mktgCallout -->
+                                </div> <!-- @end .ups-menu_mktg -->
+                            </div> <!-- @end .ups-menu_list -->
+                        </div> <!-- @end .ups-navMenu -->
+
+                        <div class="ups-navMenu ups-menu">
+                            <a href="#" class="ups-menu_toggle" role="tab" aria-controls="ups-menuPanel1" aria-selected="false" aria-expanded="false" id="ups-menuLinks1">Shipping
+                                <span class="ups-readerTxt" data-lang-show="Expand Shipping" data-lang-hide="Collapse Shipping">Collapse Shipping</span>
+                            </a>
+                            <div class="ups-menu_list ups-cols-3" id="ups-menuPanel1" role="tabpanel" aria-hidden="true" aria-labelledby="ups-menuLinks1">
+                                <h2 class="ups-med_show">Shipping</h2>
+                                <div class="ups-menu_listCols">
+
+                                        <div class="ups-menu_column">
+                                            <h3>New Shipments</h3>
+                                            <ul class="ups-menu_links">
+
+                                                    <li>
+                                                        <a href="serviceGuide.html">
+                                                            Service Guide*
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#ship_create">
+                                                            Create Shipment: <em>Package & Freight</em>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#ship_calc">
+                                                            Calculate Time & Cost
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#ship_sched">
+                                                            Schedule a Pickup
+                                                        </a>
+                                                    </li>
+
+
+
+                                            </ul>
+                                        </div> <!-- @end .ups-menu_column -->
+
+                                        <div class="ups-menu_column">
+                                            <h3>Existing Shipments</h3>
+                                            <ul class="ups-menu_links">
+
+                                                    <li>
+                                                        <a href="#ship_history">
+                                                            View Shipping History
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#ship_void">
+                                                            Void Shipment
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#ship_return">
+                                                            Return Shipment
+                                                        </a>
+                                                    </li>
+
+
+
+                                            </ul>
+                                        </div> <!-- @end .ups-menu_column -->
+
+                                        <div class="ups-menu_column">
+                                            <h3>More Shipping Options</h3>
+                                            <ul class="ups-menu_links">
+
+                                                    <li>
+                                                        <a href="#ship_batch">
+                                                            Batch File Shipping
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#ship_import">
+                                                            Create Import: <em>UPS Import Control<sup>&#8480;</sup></em>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#ship_inter">
+                                                            International Toolset: <em>UPS TradeAbility<sup>&reg;</sup></em>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#ship_rates">
+                                                            Rate & Service Guide
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#ship_supplies">
+                                                            Order Supplies
+                                                        </a>
+                                                    </li>
+
+
+
+                                            </ul>
+                                        </div> <!-- @end .ups-menu_column -->
+
+
+
+                                        <a class="ups-menu_cta" href="/shipping.html">Explore All Shipping<span class="icon" aria-hidden="true"></span></a>
+
+                                </div> <!-- @end .ups-menu_listCols -->
+
+                                <!-- <a class="ups-menu_marketing-message" href="" tabindex="0"></a> -->
+                                <div class="ups-menu_mktg ups-med_hide">
+
+
+                                    <div class="ups-menu_mktgCallout">
+                                        <a href="#ship_callout">
+                                            <img src="/assets/resources/images/navigation/MS14_200x100.jpg" tabindex="0" alt="">
+                                        </a>
+                                        <h3>Big savings for small businesses.</h3>
+                                        <p>Save up to 18% on your next shipment.</p>
+                                        <a class="ups-cta_link" href="#ship_callout">Sign up to start saving</a>
+                                    </div>  <!-- @end .ups-menu_mktgCallout -->
+                                </div> <!-- @end .ups-menu_mktg -->
+                            </div> <!-- @end .ups-menu_list -->
+                        </div> <!-- @end .ups-navMenu -->
+
+                        <div class="ups-navMenu ups-menu">
+                            <a href="#" class="ups-menu_toggle" role="tab" aria-controls="ups-menuPanel2" aria-selected="false" aria-expanded="false" id="ups-menuLinks2">Services
+                                <span class="ups-readerTxt" data-lang-show="Expand Services" data-lang-hide="Collapse Services">Collapse Services</span>
+                            </a>
+                            <div class="ups-menu_list ups-cols-3" id="ups-menuPanel2" role="tabpanel" aria-hidden="true" aria-labelledby="ups-menuLinks2">
+                                <h2 class="ups-med_show">Services</h2>
+                                <div class="ups-menu_listCols">
+
+                                        <div class="ups-menu_column">
+                                            <h3>By Type</h3>
+                                            <ul class="ups-menu_links">
+
+                                                    <li>
+                                                        <a href="#prodserv_ship">
+                                                            Shipping
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#prodserv_ship">
+                                                            Tracking
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#prodserv_billing">
+                                                            Billing
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#prodserv_inter">
+                                                            International Trade
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#prodserv_contract">
+                                                            Contract Logistics
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#prodserv_tech">
+                                                            Integrating UPS Technology
+                                                        </a>
+                                                    </li>
+
+
+
+                                            </ul>
+                                        </div> <!-- @end .ups-menu_column -->
+
+                                        <div class="ups-menu_column">
+                                            <h3>By Size</h3>
+                                            <ul class="ups-menu_links">
+
+                                                    <li>
+                                                        <a href="#prodserv_indiv">
+                                                            Individual Shipper
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#prodserv_small">
+                                                            Small Business
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#prodserv_medium">
+                                                            Medium to Large Business
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#prodserv_custom">
+                                                            Customized Solutions
+                                                        </a>
+                                                    </li>
+
+
+
+                                            </ul>
+                                        </div> <!-- @end .ups-menu_column -->
+
+                                        <div class="ups-menu_column">
+                                            <h3>By Industry</h3>
+                                            <ul class="ups-menu_links">
+
+                                                    <li>
+                                                        <a href="/healthcare.html">
+                                                            Healthcare*
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#prodserv_retail">
+                                                            Retail & Consumer Goods
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#prodserv_tech">
+                                                            High Tech
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#prodserv_manuf">
+                                                            Industrial Manufacturing & Distribution
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#prodserv_auto">
+                                                            Automotive
+                                                        </a>
+                                                    </li>
+
+
+
+                                                    <li><a class="ups-more" href="#prodserv_all_ind">See All</a></li>
+
+                                            </ul>
+                                        </div> <!-- @end .ups-menu_column -->
+
+
+
+                                        <a class="ups-menu_cta" href="/prodServices.html">Explore All Services<span class="icon" aria-hidden="true"></span></a>
+
+                                </div> <!-- @end .ups-menu_listCols -->
+
+                                <!-- <a class="ups-menu_marketing-message" href="" tabindex="0"></a> -->
+                                <div class="ups-menu_mktg ups-med_hide">
+
+
+                                    <div class="ups-menu_mktgCallout">
+                                        <a href="#prodserv_callout">
+                                            <img src="/assets/resources/images/navigation/MS18_200x100.jpg" tabindex="0" alt="">
+                                        </a>
+                                        <h3>Shipping tools for every business.</h3>
+                                        <p>Choose from a variety of flexible and efficient shipping tools to best fit your business.</p>
+                                        <a class="ups-cta_link" href="#prodserv_callout">Shipping made simple</a>
+                                    </div>  <!-- @end .ups-menu_mktgCallout -->
+                                </div> <!-- @end .ups-menu_mktg -->
+                            </div> <!-- @end .ups-menu_list -->
+                        </div> <!-- @end .ups-navMenu -->
+
+                </div> <!-- @end .ups-navItems_primary -->
+
+
+                    <div id="ups-header_custServ" class="ups-menu col-md-3">
+                        <button class="ups-menu_toggle" id="ups-custServe-toggle" aria-controls="ups-custServe-panel"><span class="icon" aria-hidden="true"></span>Customer Service
+                            <span class="ups-readerTxt" data-lang-show="Expand Customer Service" data-lang-hide="Collapse Customer Service">Collapse Customer Service</span>
+                        </button>
+                        <div class="ups-header_custServ_list ups-menu_list " id="ups-custServe-panel" aria-labelledby="ups-custServe-toggle">
+                            <h2 class="ups-med_show">Customer Service</h2>
+
+
+
+                            <ul class="ups-headerCust_links col-md-6">
+
+                                    <li>
+                                        <a href="#custserv_help">Help Center</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#custserv_start">Get Started With UPS</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#custserv_change">Change a Delivery</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#custserv_issue">Delivery Issues</a>
+                                    </li>
+
+                            </ul>
+
+                            <ul class="ups-header_custServ_contact col-md-6">
+
+                                    <li class="ups-conversation">
+                                        <a href="#custserv_chat"><span class="icon" aria-hidden="true"></span><span>Live Chat</span></a>
+                                    </li>
+
+                                    <li class="ups-email">
+                                        <a href="#custserv_email"><span class="icon" aria-hidden="true"></span><span>Email Us</span></a>
+                                    </li>
+
+                                    <li class="ups-phone">
+                                        <a href="#custserv_call"><span class="icon" aria-hidden="true"></span><span>Call Us</span></a>
+                                    </li>
+
+                                    <li class="ups-locator">
+                                        <a href="#custserv_all"><span class="icon" aria-hidden="true"></span><span>See All Contact Options</span></a>
+                                    </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                <ul class="ups-header_utils">
+
+                        <li class="ups-login">
+                            <a href="#login">Log In</a>
+                        </li>
+
+
+                        <li class="ups-signup">
+                            <a href="#signup">Sign up</a>
+                        </li>
+
+
+                        <li class="ups-locations">
+                            <a href="#locations">Locations</a>
+                        </li>
+
+                    <li class="ups-language ups-menu">
+                        <a href="#language" class="ups-menu_toggle" id="ups-language-toggle" aria-controls="ups-language-panel"><span class="icon ups-icon-globe" aria-hidden="true"></span>United States - English
+                            <span class="ups-readerTxt" data-lang-show="Expand United States - English" data-lang-hide="Collapse United States - English">Collapse United States - English</span>
+                            <span class="icon ups-icon-chevrondown" aria-hidden="true"></span>
+                        </a>
+                        <div class="ups-menu_list" id="ups-language-panel" aria-labelledby="ups-language-toggle">
+                            <ul>
+
+                                    <li lang="es"><a href="http://localhost:9000/langSelect.html">Estados Unidos - Español</a></li>
+
+                            </ul>
+                            <div class="ups-more">
+                                <a href="/langSelect.html">Select Another Country</a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                        <li class="ups-account ups-menu">
+                            <a href="#account" class="ups-menu_toggle" id="ups-account-toggle" aria-controls="ups-account-panel">My Profile
+                                <span class="ups-readerTxt" data-lang-show="Expand My Profile" data-lang-hide="Collapse My Profile">Collapse My Profile</span>
+                                <span class="icon ups-icon-chevrondown" aria-hidden="true"></span>
+                            </a>
+                            <div class="ups-menu_list" id="ups-account-panel" aria-labelledby="ups-account-toggle">
+
+
+
+                                    <ul>
+
+                                            <li><a href="#login">Log in</a></li>
+
+                                            <li><a href="#signup">Sign up</a></li>
+
+                                    </ul>
+
+                                    <ul>
+
+                                            <li><a href="#overview">Overview</a></li>
+
+                                            <li><a href="#myinfo">My Information</a></li>
+
+                                            <li><a href="#addresses">Addresses</a></li>
+
+                                            <li><a href="#payment">Payment Options</a></li>
+
+                                            <li><a href="#preferences">Preferences</a></li>
+
+                                    </ul>
+
+                                    <ul>
+
+                                            <li><a href="#acct_bill">View & Pay Bill</a></li>
+
+                                    </ul>
+
+                            </div>
+                        </li>
+
+                </ul> <!-- @end .ups-header_utils -->
+
+
+                    <form id="ups-header_search" method="post" data-action="#TBD" action="#TBD">
+                        <label for="ups-mainNav-search" class="ups-readerTxt">Search</label>
+                        <input id="ups-mainNav-search" type="search" name="ups-search" placeholder="Search">
+                        <button id="ups-mainNav_search_submit" class="ups-header_search_submit" type="submit">
+                            <i class="ups-icon-search" aria-hidden="true"></i>
+                            <span class="ups-readerTxt">Go</span>
+                        </button>
+                    </form>
+
+
+            </nav> <!-- @end #ups-navItems -->
+
+
+                <form id="ups-header_search-mob" method="post" data-action="#TBD" action="#TBD">
+                    <label for="ups-search-mob" class="ups-readerTxt">Search</label>
+                    <input type="search" name="ups-search-mob" placeholder="Search" id="ups-search-mob">
+                    <button class="ups-cta" type="submit"><span class="icon" aria-hidden="true"></span>Go</button>
+                </form>
+
+
+
+        </div><!-- @end #ups-header -->
+
+    </header><!-- @end #ups-headerWrap -->
+
+</div><!-- @end #ups-navContainer -->
+
+
+
+</div>

@@ -22,11 +22,14 @@
     "cookie-parser": "^1.4.1",
     "express": "^4.13.4",
     "fs": "0.0.2",
+    "gulp-sass": "^2.3.2",
     "instagram-node": "^0.5.8",
+    "less": "^2.7.1",
     "mongodb": "^2.2.5",
     "mongojs": "^2.4.0",
     "mongoose": "^4.5.9",
     "node-rest-client": "^1.8.0",
+    "node-sass": "^3.10.1",
     "querystring": "^0.2.0",
     "request": "^2.72.0",
     "twitter": "^1.2.5",
@@ -35,5 +38,12 @@
   "engines": {
     "node": "^5.10.1",
     "npm": "^2.1.x"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "node-sass": "^3.10.1",
+    "gulp-autoprefixer": "^0.0.7",
+    "gulp-sass": "^2.0.0-alpha.1",
+    "gulp-util": "^3.0.4"
   }
 }

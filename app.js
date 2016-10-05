@@ -12,7 +12,10 @@ let fs = require('fs'),
     request = require('request'),
     querystring = require('querystring'),
     cookieParser = require('cookie-parser'),
+    gulp = require('gulp'),
     Client = require('node-rest-client').Client;
+
+
 
 var client = new Client();
 
@@ -29,6 +32,9 @@ if (ignitionSwitch) {
     dbConnectionString = 'turner';
 }
 
+gulp.task('default', function() {
+  // place code for your default task here
+});
 
 var db = mongojs(dbConnectionString, ['Titles']);
 

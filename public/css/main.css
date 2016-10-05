@@ -1,0 +1,36 @@
+.theHappyPlace, .upsBrown {
+  color: #c91a13;
+  background-color: #c91a13;
+  font-size: 59px; }
+
+.fontAdjustment, .footerContainer .huge {
+  font-size: 50px; }
+
+.footerContainer .huge {
+  margin: 0;
+  color: #f0f;
+  background-color: #351c15; }
+
+.upsBrown {
+  margin: 0;
+  color: #46322d;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px; }
+
+.thatButtonOverThere, .jumbo_button {
+  background: #fff;
+  color: #f0f;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  box-shadow: 0px 53px 0px #ddd; }
+
+.jumbo_button {
+  padding: 20px;
+  color: magenta; }

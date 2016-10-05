@@ -1,17 +1,11 @@
 body, html {
     height: auto;
     color: #fff;
-    background: #1e5799;
-    background: #ddd;
     font-family: 'Georgia', sans-serif;
-    font-size: 100px;
 }
 
 .deleteThisPadding {
     padding: 0;
-    /* THIS IS JUST TO POSITION THE FOOTER IN THE MIDDLE */
-    /*margin-top: 50px;*/
-    /* THIS IS JUST TO POSITION THE FOOTER IN THE MIDDLE */
 }
 
 .baseFooter {
@@ -109,4 +103,13 @@ h6 {
 a:not(.md-button):hover {
     color: #00A3E0;
     text-decoration: none;
+}
+
+.container-fluid {
+    padding: 0px;
+    margin: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }

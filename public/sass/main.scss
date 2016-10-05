@@ -1,0 +1,58 @@
+
+// variables
+// nesting
+// import partials
+// extend partials
+// include/mixins
+// operations
+
+@import "colors";
+
+@mixin border-radius($radius: 10px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.theHappyPlace{
+  color: $red;background-color: $red;font-size: 59px;
+}
+
+.fontAdjustment{
+  font-size: 50px;
+}
+.footerContainer {
+  .huge {
+    margin: 0;
+    color: $HUGE;
+    background-color: $ups_brown;
+    @extend .fontAdjustment;
+  }
+}
+.upsBrown {
+  margin: 0;
+  color: $brown_s4;
+  @extend .theHappyPlace;
+  @include border-radius(25px);
+
+}
+.thatButtonOverThere {
+  background: $HUGE_background_color;
+  color: $HUGE_color;
+  padding: $HUGE_padding;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  box-shadow: 0px 53px 0px #ddd;
+
+}
+
+.jumbo_button{
+  @extend .thatButtonOverThere;
+  padding: $HUGE_padding + 15;
+  color:   $HUGE_color * 1.5;
+}
